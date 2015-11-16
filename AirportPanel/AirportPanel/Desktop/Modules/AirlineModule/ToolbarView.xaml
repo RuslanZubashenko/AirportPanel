@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="Airport.Desktop.AirlineModule.ToolbarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Airport.Desktop.AirlineModule"
+             mc:Ignorable="d" 
+             >
+    <ToolBar x:Name="AirlineToolbar">
+            <Button x:Name="btnAddAirline" Content="Add"/>
+            <Button x:Name="btnEditAirline" Content="Edit"/>
+        <Button x:Name="btnDeleteAirline" Content="Delete"/>
+        <Button x:Name="btnDetailsAirline" Content="Details"/>
+    </ToolBar>
+</UserControl>

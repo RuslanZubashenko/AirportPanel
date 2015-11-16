@@ -1,0 +1,92 @@
+﻿@model Airport.MVC.Models.FlightModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FlightModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FlightNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlightNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AirlineId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AirlineId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArrivalPortId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArrivalPortId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArrivalDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArrivalDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeparturePortId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeparturePortId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartureDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartureDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Terminal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Terminal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PlaceQty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlaceQty)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Buy Ticket", "Create", "Passenger", new { Model.Id }, new { flightId = Model.Id }) |
+
+    @Html.ActionLink("Back to List", "Index")
+</p>

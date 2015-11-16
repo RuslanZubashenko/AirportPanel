@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airport.DAL", "Airport.DAL\Airport.DAL.csproj", "{456AC5DF-4749-478B-97CE-C4BA032C3A79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airport.UnitOfWork", "UnitOfWork\Airport.UnitOfWork.csproj", "{06FC0696-9AF5-48E2-AB10-A53AC53A352B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependecies", "Dependecies", "{69A3771B-C081-48BF-9AD7-4D99D3462148}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\EntityFramework.dll = Dependencies\EntityFramework.dll
+		Dependencies\EntityFramework.SqlServer.dll = Dependencies\EntityFramework.SqlServer.dll
+		Dependencies\Microsoft.Practices.ServiceLocation.dll = Dependencies\Microsoft.Practices.ServiceLocation.dll
+		Dependencies\Microsoft.Practices.Unity.Configuration.dll = Dependencies\Microsoft.Practices.Unity.Configuration.dll
+		Dependencies\Microsoft.Practices.Unity.dll = Dependencies\Microsoft.Practices.Unity.dll
+		Dependencies\Microsoft.Practices.Unity.RegistrationByConvention.dll = Dependencies\Microsoft.Practices.Unity.RegistrationByConvention.dll
+		Dependencies\Prism.dll = Dependencies\Prism.dll
+		Dependencies\Prism.Unity.Wpf.dll = Dependencies\Prism.Unity.Wpf.dll
+		Dependencies\Prism.Wpf.dll = Dependencies\Prism.Wpf.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airport.MVC", "Airport.MVC\Airport.MVC.csproj", "{63656009-30CE-4FF0-96ED-510F54E0A08A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airport.Desktop", "Airport.Desktop\Airport.Desktop.csproj", "{A0FD5738-19E8-46F6-B18D-3CADC8FC9008}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{123B46F6-FF22-4F65-8C82-E6535B68E29F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{4831EB4E-F84D-48C8-8F5D-94CA11770FAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airport.Desktop.Infrastructure", "Airport.Desktop.Infrastructure\Airport.Desktop.Infrastructure.csproj", "{79D66DC1-CDA9-4948-B44D-9A47702FDBE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{824020C0-CCFB-4472-8A07-A78EF16C2818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineModule", "Desktop\Modules\AirlineModule\AirlineModule.csproj", "{DDF75A69-1C2A-476C-AD72-948FCD0D108C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{456AC5DF-4749-478B-97CE-C4BA032C3A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456AC5DF-4749-478B-97CE-C4BA032C3A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456AC5DF-4749-478B-97CE-C4BA032C3A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456AC5DF-4749-478B-97CE-C4BA032C3A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06FC0696-9AF5-48E2-AB10-A53AC53A352B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06FC0696-9AF5-48E2-AB10-A53AC53A352B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06FC0696-9AF5-48E2-AB10-A53AC53A352B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06FC0696-9AF5-48E2-AB10-A53AC53A352B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63656009-30CE-4FF0-96ED-510F54E0A08A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63656009-30CE-4FF0-96ED-510F54E0A08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63656009-30CE-4FF0-96ED-510F54E0A08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63656009-30CE-4FF0-96ED-510F54E0A08A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0FD5738-19E8-46F6-B18D-3CADC8FC9008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FD5738-19E8-46F6-B18D-3CADC8FC9008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FD5738-19E8-46F6-B18D-3CADC8FC9008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FD5738-19E8-46F6-B18D-3CADC8FC9008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D66DC1-CDA9-4948-B44D-9A47702FDBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D66DC1-CDA9-4948-B44D-9A47702FDBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D66DC1-CDA9-4948-B44D-9A47702FDBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D66DC1-CDA9-4948-B44D-9A47702FDBE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF75A69-1C2A-476C-AD72-948FCD0D108C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF75A69-1C2A-476C-AD72-948FCD0D108C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF75A69-1C2A-476C-AD72-948FCD0D108C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF75A69-1C2A-476C-AD72-948FCD0D108C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{456AC5DF-4749-478B-97CE-C4BA032C3A79} = {123B46F6-FF22-4F65-8C82-E6535B68E29F}
+		{06FC0696-9AF5-48E2-AB10-A53AC53A352B} = {123B46F6-FF22-4F65-8C82-E6535B68E29F}
+		{A0FD5738-19E8-46F6-B18D-3CADC8FC9008} = {4831EB4E-F84D-48C8-8F5D-94CA11770FAC}
+		{79D66DC1-CDA9-4948-B44D-9A47702FDBE3} = {4831EB4E-F84D-48C8-8F5D-94CA11770FAC}
+		{824020C0-CCFB-4472-8A07-A78EF16C2818} = {4831EB4E-F84D-48C8-8F5D-94CA11770FAC}
+		{DDF75A69-1C2A-476C-AD72-948FCD0D108C} = {824020C0-CCFB-4472-8A07-A78EF16C2818}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mishakos.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Airport.DAL\\Airport.DAL.csproj
+		SccProjectTopLevelParentUniqueName1 = AirportPanel.sln
+		SccProjectName1 = Airport.DAL
+		SccLocalPath1 = Airport.DAL
+		SccProjectUniqueName2 = Airport.MVC\\Airport.MVC.csproj
+		SccProjectTopLevelParentUniqueName2 = AirportPanel.sln
+		SccProjectName2 = Airport.MVC
+		SccLocalPath2 = Airport.MVC
+		SccProjectUniqueName3 = UnitOfWork\\Airport.UnitOfWork.csproj
+		SccProjectTopLevelParentUniqueName3 = AirportPanel.sln
+		SccProjectName3 = UnitOfWork
+		SccLocalPath3 = UnitOfWork
+		SccProjectUniqueName4 = Airport.Desktop\\Airport.Desktop.csproj
+		SccProjectTopLevelParentUniqueName4 = AirportPanel.sln
+		SccProjectName4 = Airport.Desktop
+		SccLocalPath4 = Airport.Desktop
+		SccProjectUniqueName5 = Airport.Desktop.Infrastructure\\Airport.Desktop.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName5 = AirportPanel.sln
+		SccProjectName5 = Airport.Desktop.Infrastructure
+		SccLocalPath5 = Airport.Desktop.Infrastructure
+		SccProjectUniqueName6 = Desktop\\Modules\\AirlineModule\\AirlineModule.csproj
+		SccProjectTopLevelParentUniqueName6 = AirportPanel.sln
+		SccProjectName6 = Desktop/Modules/AirlineModule
+		SccLocalPath6 = Desktop\\Modules\\AirlineModule
+	EndGlobalSection
+EndGlobal
